@@ -28,10 +28,20 @@ namespace Pre_work_Code_Challenges
             //2nd step: Ask the user for a number to check for.
             Console.WriteLine("Please enter a number to check: ");
             int numberCheck = int.Parse(Console.ReadLine());
-           
-                
-                    
-                
+
+            //3rd step is to hceck how many times that number appeaars and sum them (Addition) Sample inout includes two 4's and the user checks for 4 so the output is 8.
+            int returnVariable = 0;
+            //use a for loop to iterate through the users input array length
+            for(int i = 0; i < arrayLength; i++)
+            {
+                returnVariable += numberCheck;
+            }
+            //Tell the user their score!
+            Console.WriteLine($"You have a score of {returnVariable}!");
+
+
+
         }
     }
+
 }
