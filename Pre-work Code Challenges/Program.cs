@@ -7,6 +7,7 @@ namespace Pre_work_Code_Challenges
     {
         static void Main(string[] args)
         {
+
             //Console.WriteLine("Challenge 1: Array Max Result");
            // arrayMaxResult();
            // Console.WriteLine("Challeng 2: Leap Year Calculator");
@@ -14,11 +15,10 @@ namespace Pre_work_Code_Challenges
             Console.WriteLine("Challenge 3: Perfect Sequence");
             perfectSequence();
 
-
-
         }
         //PROBLEM 1: Array Max Result: Not a guessing game after all, we are just asking a user for 5 inputs then asking them for a new number to check their array to see if they have had that number. Then we need to sum it! 
         public static void arrayMaxResult()
+
         {
             // 1st step: Request 5 numbers between 1-10 from User
             // set array length
@@ -46,8 +46,6 @@ namespace Pre_work_Code_Challenges
                 {
                     returnVariable += numberCheck;
                 }
-
-
             }
             //Tell the user their score, use string interpolation to input the return variable
             Console.WriteLine($"You have a score of {returnVariable}!");
@@ -97,6 +95,7 @@ namespace Pre_work_Code_Challenges
                 Console.WriteLine("Please enter a number for your sequence, This will be aked until your array has been filled! ");
                 userNumberInputsArray[i] = int.Parse(Console.ReadLine());
             }
+
 
             //check product and sum of those numbers
             int userArraySum = 0;
