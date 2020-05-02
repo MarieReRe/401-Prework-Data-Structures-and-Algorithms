@@ -98,9 +98,24 @@ namespace Pre_work_Code_Challenges
                 userNumberInputsArray[i] = int.Parse(Console.ReadLine());
             }
 
-
             //check product and sum of those numbers
+            int userArraySum = 0;
+            int userArrayProduct = 1;
+
+            foreach(int num in userNumberInputsArray)
+            {
+                userArraySum += num;
+                userArrayProduct *= num;
+            }
             // let user know if they have a perfect sequence, is this like winning the lottery?
+            if(userArraySum > 0 && userArraySum == userArrayProduct)
+            {
+                Console.WriteLine("That is a perfect sequence!");
+            }
+            else
+            {
+                Console.WriteLine("Defiitely not a perfect sequence, sorry.f");
+            }
 
         }
 
