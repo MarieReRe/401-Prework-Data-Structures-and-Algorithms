@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 namespace Pre_work_Code_Challenges
 {
@@ -24,6 +25,9 @@ namespace Pre_work_Code_Challenges
                 // Next we need to put those numbers into the array- we will need to parse into integer for this
                 userInputArray[i] = int.Parse(Console.ReadLine());
             }
+            //2nd step: Ask the user for a number to check for.
+            Console.WriteLine("Please enter a number to check: ");
+            int numberCheck = int.Parse(Console.ReadLine());
            
                 
                     
