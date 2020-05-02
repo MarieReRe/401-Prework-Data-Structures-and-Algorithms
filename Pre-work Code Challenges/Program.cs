@@ -34,7 +34,13 @@ namespace Pre_work_Code_Challenges
             //use a for loop to iterate through the users input array length
             for(int i = 0; i < arrayLength; i++)
             {
-                returnVariable += numberCheck;
+                //we need to check if the user's array contains the number that they chose to check for their score
+                if(userInputArray[i] == numberCheck)
+                {
+                    returnVariable += numberCheck;
+                }
+                
+             
             }
             //Tell the user their score!
             Console.WriteLine($"You have a score of {returnVariable}!");
