@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Dynamic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Pre_work_Code_Challenges
 {
@@ -7,18 +7,20 @@ namespace Pre_work_Code_Challenges
     {
         static void Main(string[] args)
         {
-
             //Console.WriteLine("Challenge 1: Array Max Result");
            // arrayMaxResult();
            // Console.WriteLine("Challeng 2: Leap Year Calculator");
            // leapYearCalculator();
-            Console.WriteLine("Challenge 3: Perfect Sequence");
-            perfectSequence();
+           // Console.WriteLine("Challenge 3: Perfect Sequence");
+           // perfectSequence();
+            Console.WriteLine("Challeng 4: Sum of Rows");
+            sumOfRows();
+
+
 
         }
         //PROBLEM 1: Array Max Result: Not a guessing game after all, we are just asking a user for 5 inputs then asking them for a new number to check their array to see if they have had that number. Then we need to sum it! 
         public static void arrayMaxResult()
-
         {
             // 1st step: Request 5 numbers between 1-10 from User
             // set array length
@@ -46,6 +48,8 @@ namespace Pre_work_Code_Challenges
                 {
                     returnVariable += numberCheck;
                 }
+
+
             }
             //Tell the user their score, use string interpolation to input the return variable
             Console.WriteLine($"You have a score of {returnVariable}!");
@@ -82,7 +86,7 @@ namespace Pre_work_Code_Challenges
 
         }
         //Problem 3: Check if the users array is a perfect sequence ugh maths
-        private static void perfectSequence()
+        public static void perfectSequence()
         {
             // user needs to decide how many numbers are in their array -> convert to int
             Console.WriteLine("How many numbers would you like in your array?" );
@@ -92,14 +96,13 @@ namespace Pre_work_Code_Challenges
             int[] userNumberInputsArray = new int[userArrayLength];
             for(int i = 0; i < userArrayLength; i++)
             {
-                Console.WriteLine("Please enter a number for your sequence, This will be aked until your array has been filled! ");
+                Console.WriteLine("Please enter a number for your sequence, This will be asked until your array has been filled! ");
                 userNumberInputsArray[i] = int.Parse(Console.ReadLine());
             }
 
-
             //check product and sum of those numbers
             int userArraySum = 0;
-            int userArrayProduct = 1;
+            int userArrayProduct = 1; //set to zero initailly and it did not work
 
             foreach(int num in userNumberInputsArray)
             {
@@ -113,9 +116,22 @@ namespace Pre_work_Code_Challenges
             }
             else
             {
-                Console.WriteLine("Defiitely not a perfect sequence, sorry.f");
+                Console.WriteLine("Definitely not a perfect sequence, sorry.");
             }
+            
 
+        }
+        // Challenge 4: Sum of Rows: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/jagged-arrays
+        // https://docs.microsoft.com/en-us/dotnet/api/system.array.getlength?view=netcore-3.1#System_Array_GetLength_System_Int32_
+        public static void sumOfRows()
+        {
+            //user needs to specify length and width of the array in the console
+            Console.WriteLine("How many columns in your array?");
+            int userArrayColumns = int.Parse(Console.ReadLine());
+            int[] singleArray = new int[userArrayColumns];
+
+            Console.WriteLine("How many rows in your array?");
+            int userArrayRows = int.Parse(Console.ReadLine());
         }
 
     }
