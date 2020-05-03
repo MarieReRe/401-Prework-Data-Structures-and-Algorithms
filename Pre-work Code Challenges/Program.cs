@@ -38,7 +38,7 @@ namespace Pre_work_Code_Challenges
             Console.WriteLine("Please enter a number to check: ");
             int numberCheck = int.Parse(Console.ReadLine());
 
-            //3rd step is to hceck how many times that number appeaars and sum them (Addition) Sample inout includes two 4's and the user checks for 4 so the output is 8.
+            //3rd step is to check how many times that number appears and sum them (Addition) Sample inout includes two 4's and the user checks for 4 so the output is 8.
             int returnVariable = 0;
             //use a for loop to iterate through the users input array length
             for (int i = 0; i < arrayLength; i++)
@@ -126,12 +126,60 @@ namespace Pre_work_Code_Challenges
         public static void sumOfRows()
         {
             //user needs to specify length and width of the array in the console
-            Console.WriteLine("How many columns in your array?");
-            int userArrayColumns = int.Parse(Console.ReadLine());
-            int[] singleArray = new int[userArrayColumns];
-
             Console.WriteLine("How many rows in your array?");
             int userArrayRows = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("How many columns in your array?");
+            int userArrayColumns = int.Parse(Console.ReadLine());
+
+            
+
+            //how do we take these user inputs and set this for the multidimensional array, to then have the user input each row?
+            int[,] userMultiDimensionalArray = new int[userArrayRows, userArrayColumns];
+            int newUserRow = 1;
+            int newUserColumn = 1;
+            // create for loop to fill array: we need to filleach row with how many columns the array has then iterate through until rows are filled
+            for (int i = 0; i < userArrayRows; i++) 
+            {
+                for (int j = 0; j < userArrayColumns; j++)
+                {
+                    Console.WriteLine("Your number for row " + newUserRow + "column " + newUserColumn + ": ");
+                    userMultiDimensionalArray[i, j] = int.Parse(Console.ReadLine());
+                    newUserColumn++;
+                }
+                newUserRow++;
+                newUserColumn = 1;
+            }
+            Console.WriteLine();
+            // make array for the rows
+            int[] sumOfEachRowArray = new int[userArrayRows];
+            //set sum to 0
+            int sum = 0;
+
+            // loop through each row to sum (Addition) 
+            for(int i = 0; i < userArrayRows; i++)
+            {
+                for(int j = 0; j < userArrayColumns; j++)
+                {
+                    sum += userMultiDimensionalArray[i, j];
+                }
+                sumOfEachRowArray[i] = sum;
+                sum = 0;
+            }
+            //display the sum for each row to the user
+            for(int i = 0; i < userArrayRows; i++)
+            {
+                Console.WriteLine("The sum of your row " + (i + 1) + " is " + sumOfEachRowArray[i]);
+            }
+            Console.WriteLine();
+
+
+
+
+
+
+
+             
         }
 
     }
