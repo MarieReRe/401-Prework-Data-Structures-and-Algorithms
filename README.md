@@ -3,7 +3,7 @@
 
 #### Challenge 1: Array Max Result
 
-![](images/52MMkGQ.jpg)
+![] (images/52MMkGQ.jpg)
 
 #### Problem Statement
 Given an array select a number that exists, and output the computated "score". The method you create should take in
