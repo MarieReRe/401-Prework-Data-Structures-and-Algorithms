@@ -2,7 +2,8 @@
 ## Pre-Work Challenges
 
 #### Challenge 1: Array Max Result
-![](images/52MMkGQ.png)
+
+![](images/52MMkGQ.jpg)
 #### Problem Statement
 Given an array select a number that exists, and output the computated "score". The method you create should take in
 both an array of integers and the integer the user selected.
@@ -24,6 +25,8 @@ An array of integers, and the number chosen.
 8
 
 <hr />
+
+
 #### Challenge 2: Leap Year Calculator
 
 
