@@ -3,8 +3,7 @@
 
 #### Challenge 1: Array Max Result
 
-![] (images/52MMkGQ.jpg)
-
+## Go To images folder to see console app output
 #### Problem Statement
 Given an array select a number that exists, and output the computated "score". The method you create should take in
 both an array of integers and the integer the user selected.
