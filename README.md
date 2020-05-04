@@ -26,9 +26,13 @@ An array of integers, and the number chosen.
 <hr />
 
 
+
+
 #### Challenge 2: Leap Year Calculator
 
 
 #### Challenge 3: Perfect Sequence
 
+
 #### Challenge 4: Sum of Rows
+

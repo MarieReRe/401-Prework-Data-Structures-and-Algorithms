@@ -9,12 +9,12 @@ namespace Pre_work_Code_Challenges
         {
             //Console.WriteLine("Challenge 1: Array Max Result");
            // arrayMaxResult();
-           // Console.WriteLine("Challeng 2: Leap Year Calculator");
-           // leapYearCalculator();
-           // Console.WriteLine("Challenge 3: Perfect Sequence");
-           // perfectSequence();
-            Console.WriteLine("Challeng 4: Sum of Rows");
-            sumOfRows();
+           //Console.WriteLine("Challeng 2: Leap Year Calculator");
+          // leapYearCalculator();
+           Console.WriteLine("Challenge 3: Perfect Sequence");
+          perfectSequence();
+           // Console.WriteLine("Challeng 4: Sum of Rows");
+           // sumOfRows();
 
 
 
