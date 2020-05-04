@@ -1,9 +1,12 @@
 # 401-Data-Structures-and-Algorithms
 ## Pre-Work Challenges
 
+## Go To images folder to see console app output
+
+
 #### Challenge 1: Array Max Result
 
-## Go To images folder to see console app output
+
 #### Problem Statement
 Given an array select a number that exists, and output the computated "score". The method you create should take in
 both an array of integers and the integer the user selected.
